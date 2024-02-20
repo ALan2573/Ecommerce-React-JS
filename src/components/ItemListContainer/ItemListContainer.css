@@ -1,0 +1,9 @@
+.profileImg{
+    width: 95%;
+    
+}
+.ProfileCard{
+    background-color: rgb(123, 123, 123);
+    border-radius: 2%;
+    width: 20%;
+}

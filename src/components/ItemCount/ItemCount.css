@@ -1,0 +1,21 @@
+.ItemCountSpan{
+    font-size: 20px;
+    margin: 20px;
+}
+
+.Controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.Number {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.botonCarrito {
+    margin-bottom: 10px;
+}

@@ -1,0 +1,17 @@
+
+.ItemDetail {
+    background-color: rgb(126, 169, 250);
+    border-radius: 2%;
+    width: 30%;
+    margin: 10px;
+}
+
+.ItemTitle{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin: 10px 10px 10px 10px;
+
+}
+.ItemImg{
+    width: 96%;
+}

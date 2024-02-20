@@ -1,0 +1,76 @@
+.App {
+  text-align: center;
+  
+}
+.Logo {
+  width: 30px;
+}
+.d-flex{
+  width: 200%;
+}
+.LogoBusqueda{
+  width: 25px;
+ 
+ 
+}
+
+
+.CartWidgetSpan{  
+
+ color: rgb(255, 255, 255);
+ font-size: 20px;
+  position: absolute;
+  right: 29px;
+ top: -9px;
+  border-radius: 50%;
+  padding: 5px;
+
+
+}
+
+li {
+  list-style-type: none;
+}
+ul {
+  cursor: pointer;
+}
+
+.nav-item{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+
+.nav-link{
+  background-color: red;
+}
+
+.dropdown-item{
+  display: block;
+  margin-top: 10px;
+}
+.NavBar{
+  height: 60px;
+  padding-top: 10px;
+ background-color: rgb(140, 185, 241);
+}
+
+.NavBarContainer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 20px 0px 20px;
+}
+
+.CartWidget{
+  width: 45px;
+  margin-right: 2px;
+}
+
+.Button{
+  margin-right: 20px;
+}
+
+.Buttons{
+  display: flex;
+  justify-content: center;
+}
