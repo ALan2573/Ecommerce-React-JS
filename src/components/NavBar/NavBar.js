@@ -5,13 +5,14 @@ import Categorias from '../Categorias/categorias.js';
 import Logo from '../Logo/logo.png'
 
 import Busqueda  from '../Busqueda/busqueda.js';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <nav className="NavBar">
            
            <div className='NavBarContainer'>
-         <h3><img src={Logo} className='Logo' alt="Logo"/> Ecommerce</h3>
+         <h3><img src={Logo} className='Logo' alt="Logo"/><Link to="/">Ecommerce</Link></h3>
         <div> <Busqueda/></div>
         <div><Categorias/></div> 
         <div><CardWidget/></div>

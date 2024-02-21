@@ -3,7 +3,9 @@
     
 }
 .ProfileCard{
+ 
     background-color: rgb(123, 123, 123);
     border-radius: 2%;
-    width: 20%;
+    width: 30%;
+    margin-bottom: 20px;
 }

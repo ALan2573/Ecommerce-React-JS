@@ -1,0 +1,12 @@
+.Categorias{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-decoration: none;
+}
+
+.Categoriali{
+    margin: 8px;
+    margin-left: 20px;
+    font-size: 20px;
+}
