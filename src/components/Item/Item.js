@@ -1,6 +1,8 @@
 // import promps from "../ProfileCard/ProfileCard.js"
 import "./Item.css"
-import ItemCount from "../ItemCount/ItemCount"
+
+import { Link } from "react-router-dom"
+
 const Item = ({id, titulo, price, category, img, stock, description}) => {
 
 
@@ -15,7 +17,10 @@ const Item = ({id, titulo, price, category, img, stock, description}) => {
     <p className="ItemDescription">{description}</p>
     <strong className="ItemPrice">${price}</strong>
 
-     <ItemCount initial={0} stock={8} onAdd={(quantity) => console.log(`Agregaste ${quantity} al carrito ${titulo}`)} />
+
+
+     {/* <ItemCount initial={0} stock={8} onAdd={(quantity) => console.log(`Agregaste ${quantity} al carrito ${titulo}`)} /> */}
+     <Link to={`/item/${id}`} className="BotonDetalle button is-success">Ver Detalle</Link>
 
 
 

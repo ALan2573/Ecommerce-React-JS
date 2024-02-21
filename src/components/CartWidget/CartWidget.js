@@ -7,7 +7,6 @@ const CardWidget = () => {
             
            <img src={cart} alt="CartWidget"   className="CartWidget"/>
            <span className="CartWidgetSpan">0</span>
-
            <div>
   
     </div>

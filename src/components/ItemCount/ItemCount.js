@@ -30,10 +30,15 @@ return (
 
         </div>
     <div>
+<div className='Botones'>
+    
+
+
     
 <button className='button is-success botonCarrito' onClick={() => onAdd(quantity)} disabled={!stock}>
 Agregar al Carrito 
 </button>
+</div>
 
     </div>
 

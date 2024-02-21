@@ -6,6 +6,7 @@ import { getProducts, getProductByCategory} from "../../asyncMock.js";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
+
 const ItemListContainer = ({greeting}) => {
     const [products, setProducts] = useState([])
 
@@ -25,6 +26,8 @@ asyncFunc(categoryId)
         <div className="ItemListContainer">
             <h1>{greeting}</h1>
             <ItemList products={products}/>
+ 
+
 
         </div>
     )

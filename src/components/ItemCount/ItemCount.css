@@ -3,6 +3,15 @@
     margin: 20px;
 }
 
+.Botones {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin-left: 25%;
+    
+}
+
 .Controls {
     display: flex;
     flex-direction: row;
@@ -18,4 +27,5 @@
 
 .botonCarrito {
     margin-bottom: 10px;
+    margin-top: 10px;
 }
