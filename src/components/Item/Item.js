@@ -1,4 +1,4 @@
-// import promps from "../ProfileCard/ProfileCard.js"
+
 import "./Item.css"
 
 import { Link } from "react-router-dom"
