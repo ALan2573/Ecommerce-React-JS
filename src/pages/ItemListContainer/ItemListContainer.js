@@ -3,7 +3,7 @@ import "bulma/css/bulma.css";
 import "./ItemListContainer.css"
 import { useEffect, useState } from "react";
 import { getProducts, getProductByCategory} from "../../asyncMock.js";
-import ItemList from "../ItemList/ItemList";
+import ItemList from "../../components/ItemList/ItemList";
 import { useParams } from "react-router-dom";
 
 

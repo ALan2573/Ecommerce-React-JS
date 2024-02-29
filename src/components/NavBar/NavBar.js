@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.js';
 import CardWidget from '../CartWidget/CartWidget.js'
-import Categorias from '../Categorias/categorias.js';
+import Categorias from '../../pages/Categorias/categorias.js';
 import Logo from '../Logo/logo.png'
 
 import Busqueda  from '../Busqueda/busqueda.js';

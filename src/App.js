@@ -1,12 +1,12 @@
 
 import './App.css';
 import NavBar from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer.js';
+import ItemListContainer from './pages/ItemListContainer/ItemListContainer.js';
 import "bulma/css/bulma.css";
-import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer.js';
+import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from './components/context/CartContext.js';
-import Cart from './components/Cart/Cart.js'
+import Cart from './pages/Cart/Cart.js';
 function App() {
   return (
     <div className="App">
