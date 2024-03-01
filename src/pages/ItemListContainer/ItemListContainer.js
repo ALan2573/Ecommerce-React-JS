@@ -23,8 +23,9 @@ asyncFunc(categoryId)
     }, [categoryId])
 
     return (
-        <div className="ItemListContainer">
+        <div className="container">
             <h1>{greeting}</h1>
+            
             <ItemList products={products}/>
  
 

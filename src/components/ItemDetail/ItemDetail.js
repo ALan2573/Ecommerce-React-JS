@@ -26,6 +26,7 @@ const ItemDetail = ({id, titulo, price, category, img, stock, description}) => {
     }
 
 
+
     return (
         <article className="ItemDetail">
         <h1 className="ItemTitle">{titulo}</h1>

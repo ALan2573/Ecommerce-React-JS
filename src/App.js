@@ -7,6 +7,8 @@ import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { CartProvider } from './components/context/CartContext.js';
 import Cart from './pages/Cart/Cart.js';
+import { useEffect , useState } from "react";
+import {db} from "./config/firebase";
 function App() {
   return (
     <div className="App">

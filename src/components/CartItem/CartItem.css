@@ -1,0 +1,39 @@
+.cart-item{
+    background-color: rgb(201, 241, 251);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+.item-details{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.delete-button {
+    width: 50%;
+    height: 50%;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+
+}
+.item-actions {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    /* justify-content: flex-end; */
+  
+}
+.item-img {
+    width: 100%;
+    height: 100%;
+
+    /* height: 50%; */
+}

@@ -1,7 +1,8 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/CartContext';
+import './CartItem.css';
 
-const CartItem = ({ id, titulo, price, quantity }) => {
+const CartItem = ({ id, titulo, price, quantity, img }) => {
   const { removeItem } = useContext(CartContext);
   const total = price * quantity;
 
@@ -12,6 +13,10 @@ const CartItem = ({ id, titulo, price, quantity }) => {
 
   return (
     <div className="cart-item">
+<div className="item-image">
+  <img className="item-img" src={`${img}`} alt="item" />
+</div>
+
       <div className="item-details">
         <h3>nombre:{titulo}</h3>
         <p>Precio: ${price}</p>
@@ -20,7 +25,7 @@ const CartItem = ({ id, titulo, price, quantity }) => {
       <div className="item-actions">
         <p>Total: ${total}</p>
     
-        <button onClick={handleRemoveItem}>Eliminar</button>
+        <button className="delete-button" onClick={handleRemoveItem}>X</button>
       </div>
     </div>
   );
