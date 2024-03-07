@@ -34,7 +34,7 @@ const ItemDetail = () => {
         }
       }  catch (error) {
         console.error('Error fetching data:', error);
-        console.log('Error details:', error.details); // Agrega esta línea
+        console.log('Error details:', error.details); 
       } finally {
         setLoading(false);
       }

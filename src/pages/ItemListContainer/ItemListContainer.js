@@ -1,7 +1,6 @@
 import "bulma/css/bulma.css";
 import "./ItemListContainer.css"
 import { useEffect, useState } from "react";
-// import { getProducts, getProductByCategory} from "../../asyncMock.js";
 import ItemList from "../../components/ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import {getDocs, collection, query, where } from "firebase/firestore"
@@ -41,7 +40,8 @@ const ItemListContainer = ({greeting}) => {
 
     return (
         <div className="container">
-            <h1>{greeting}</h1>
+            <h1 >{greeting}</h1>
+          
             
             <ItemList products={products}/>
  

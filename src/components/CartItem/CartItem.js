@@ -14,7 +14,11 @@ const CartItem = ({ id, titulo, price, quantity, img }) => {
   return (
     <div className="cart-item">
 <div className="item-image">
-  <img className="item-img" src={`${img}`} alt="item" />
+  {img ? (
+    <img className="item-img" src={id.img} alt="item" />
+  ) : (
+    <p>Error: Imagen no encontrada</p>
+  )}
 </div>
 
       <div className="item-details">
@@ -32,3 +36,4 @@ const CartItem = ({ id, titulo, price, quantity, img }) => {
 };
 
 export default CartItem;
+

@@ -1,11 +1,25 @@
 
 .profileTitle{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-size: 25px;
     margin: 0px 10px 10px 0px;
     padding-top: 20px;
 }
+.profileImg{
+   border-radius: 5%;
+}
+.ItemCategory{
+    font-size: 15px;
+   margin-bottom: 10px;
+   margin-top: 12px;
 
+    
+}
+.itemDescription{
+    font-size: 15px;
+    margin: 0px 10px 10px 0px;
+    padding-top: 20px;
+}
 .BotonDetalle {
     display: flex;
     flex-direction: column;

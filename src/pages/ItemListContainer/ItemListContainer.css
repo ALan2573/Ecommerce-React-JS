@@ -2,9 +2,11 @@
     width: 95%;
     
 }
+
 .ProfileCard{
- 
-    background-color: rgb(123, 123, 123);
+   
+    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
     border-radius: 2%;
     width: 30%;
     margin-bottom: 20px;
