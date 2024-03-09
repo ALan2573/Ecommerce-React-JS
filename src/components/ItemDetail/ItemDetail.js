@@ -1,33 +1,30 @@
+
 import { useState, useEffect } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { CartContext } from '../context/CartContext.js';
 import { getDoc, doc } from 'firebase/firestore';
 import { db } from '../../config/firebase.js';
-import ItemCount from '../ItemCount/ItemCount';
-import './ItemDetail.css'
+import ItemQuantitySelector from '../ItemQuantitySelector/ItemQuantitySelector.js';
+import './ItemDetail.css';
 
 const ItemDetail = () => {
-  const { itemId } = useParams(); // Obtener itemId de los parámetros de la URL
+  const { itemId } = useParams(); 
   const [product, setProduct] = useState(null);
   const [loading, setLoading] = useState(true);
   const [quantityAdded, setQuantityAdded] = useState(0);
   const { addItem } = useContext(CartContext);
  
-  
   useEffect(() => {
-    console.log('Fetching product details for itemId:', itemId);
-  
     setLoading(true);
-  
+
     const fetchProduct = async () => {
       try {
         const docRef = doc(db, 'Items', String(itemId));
         const docSnap = await getDoc(docRef);
-  
+
         if (docSnap.exists()) {
           const data = docSnap.data();
-          console.log('Product details fetched successfully:', data);
           setProduct({ id: docSnap.id, ...data });
         } else {
           console.log('No such document!');
@@ -61,27 +58,29 @@ const ItemDetail = () => {
         <p>Cargando...</p>
       ) : product ? (
         <>
-   
-      <h1 className="ItemTitle">{product.titulo}</h1>
+          <h1 className="ItemTitle">{product.titulo}</h1>
           <img className="ItemImg" src={product.img} alt={product.titulo} />
           <p className="ItemCategory"> Categoría: {product.category}</p>
           <p className="ItemDescription">
-            Detalle:<mark>{product.description}</mark>
+            Detalle: <mark>{product.description}</mark>
           </p>
           <p>${product.price}</p>
 
           <footer className="ItemFooter">
             {quantityAdded > 0 ? (
-              <Link to="/cart" className="Option BotonComprar button is-success">
+              <Link to="/cart" className="addItemButton Option BotonComprar button is-success">
                 Terminar Compra
               </Link>
             ) : product.stock > 0 ? (
-              <ItemCount initial={1} stock={product.stock} onAdd={handleOnAdd} />
+              <ItemQuantitySelector
+                stock={product.stock}
+                initial={1}
+                onAdd={handleOnAdd}
+              />
             ) : (
               <p className="OutOfStock">Producto agotado</p>
             )}
           </footer>
-  
         </>
       ) : (
         <p>Producto no encontrado</p>
@@ -91,6 +90,5 @@ const ItemDetail = () => {
 };
 
 export default ItemDetail;
-
 
 
